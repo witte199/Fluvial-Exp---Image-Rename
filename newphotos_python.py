@@ -10,7 +10,9 @@ import numpy as np
 import os
 
 # Directory with photos
-cwd = r'E:\151124_MC_DW_IW_01\photoTest'
+cwd = r'E:\151124_MC_DW_IW_01\151124_MC_DW_IW_01_Photos'
+
+#cwd = r'E:\151124_MC_DW_IW_01\photoTest'
 
 os.chdir(cwd)
 photos = glob.glob('*.jpg')
@@ -21,5 +23,7 @@ for i in range(len(newphotos)):
     #newphotos[i] = newphotos[i].replace('Img', 'xxx')
     newphotos[i] = 'img_'+ ('%06d' %t) + '.jpg'
 
-for i in range(len(newphotos)):
-    os.rename(photos[i], newphotos[i])
+# Renaming the Files
+#for i in range(len(newphotos)):
+#    os.rename(photos[i], newphotos[i]) 
+
