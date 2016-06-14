@@ -8,7 +8,7 @@ import shutil
 from matplotlib import pyplot as plt
 import scanDateTime
 
-expName = '151130_IW_and_SMC_DSMC_01'
+expName = '151203_MC_BLF_01'
 
 # Run this inside the directory with the images
 cwd = 'E:\\Fluvial 2015\\' + expName + '\\' + expName + '_Photos'

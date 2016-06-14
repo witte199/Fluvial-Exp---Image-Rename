@@ -106,7 +106,7 @@ def get_start_end_times(experiment_name):
                                          dt.datetime(2015, 11, 29, 11, 49, 44),
                                          dt.datetime(2015, 11, 29, 12, 25, 53)])
     
-    elif experiment_name == '151130':
+    elif experiment_name == '151130_IW_and_SMC_DSMC_01':
         
         scan_start_times = np.array([   dt.datetime(2015, 11, 30, 14, 35, 25),
                                         dt.datetime(2015, 11, 30, 17, 29, 39),
@@ -153,15 +153,105 @@ def get_start_end_times(experiment_name):
                                          dt.datetime(2015, 12,  2, 12, 56,  5),
                                          dt.datetime(2015, 12,  2, 14,  7, 33)])
         
-    elif experiment_name == '':
-        scan_start_times = None
-        scan_end_times = None
-        pass
+    elif experiment_name == '151203_MC_BLF_01':
+        
+        scan_start_times = np.array([    dt.datetime(2015, 12,  3, 14, 19, 26),
+                                         dt.datetime(2015, 12,  3, 14, 41, 54),
+                                         dt.datetime(2015, 12,  3, 15,  4, 28),
+                                         dt.datetime(2015, 12,  3, 15, 27, 11),
+                                         dt.datetime(2015, 12,  3, 15, 49, 12),
+                                         dt.datetime(2015, 12,  4,  9, 55, 58),
+                                         dt.datetime(2015, 12,  4, 10, 19, 11),
+                                         dt.datetime(2015, 12,  4, 10, 38, 25),
+                                         dt.datetime(2015, 12,  4, 10, 59, 57),
+                                         dt.datetime(2015, 12,  4, 11, 20,  9),
+                                         dt.datetime(2015, 12,  4, 11, 43, 50),
+                                         dt.datetime(2015, 12,  4, 12,  4, 25),
+                                         dt.datetime(2015, 12,  4, 12, 26, 19),
+                                         dt.datetime(2015, 12,  4, 12, 47, 15),
+                                         dt.datetime(2015, 12,  4, 14, 46, 46),
+                                         dt.datetime(2015, 12,  4, 15,  7, 49),
+                                         dt.datetime(2015, 12,  4, 15, 50, 45),
+                                         dt.datetime(2015, 12,  4, 16, 11, 55),
+                                         dt.datetime(2015, 12,  4, 16, 54, 29),
+                                         dt.datetime(2015, 12,  4, 17, 30, 57),
+                                         dt.datetime(2015, 12,  4, 18,  7, 20),
+                                         dt.datetime(2015, 12,  5,  9, 56, 37),
+                                         dt.datetime(2015, 12,  5, 10, 32, 51),
+                                         dt.datetime(2015, 12,  5, 11,  9, 44)])
+        
+        #array of "scan end times", which are the photo start times
+        scan_end_times = np.array([      dt.datetime(2015, 12,  3, 14, 26, 32),
+                                         dt.datetime(2015, 12,  3, 14, 48, 48),
+                                         dt.datetime(2015, 12,  3, 15, 12, 11),
+                                         dt.datetime(2015, 12,  3, 15, 33, 52),
+                                         dt.datetime(2015, 12,  4,  9, 40, 58),
+                                         dt.datetime(2015, 12,  4, 10,  1, 10),
+                                         dt.datetime(2015, 12,  4, 10, 26, 21),
+                                         dt.datetime(2015, 12,  4, 10, 44, 37),
+                                         dt.datetime(2015, 12,  4, 11,  5, 29),
+                                         dt.datetime(2015, 12,  4, 11, 28, 49),
+                                         dt.datetime(2015, 12,  4, 11, 49, 25),
+                                         dt.datetime(2015, 12,  4, 12, 11, 19),
+                                         dt.datetime(2015, 12,  4, 12, 32, 15),
+                                         dt.datetime(2015, 12,  4, 14, 31, 45),
+                                         dt.datetime(2015, 12,  4, 14, 52, 49),
+                                         dt.datetime(2015, 12,  4, 15, 22, 18),
+                                         dt.datetime(2015, 12,  4, 16,  1, 35),
+                                         dt.datetime(2015, 12,  4, 16, 23, 50),
+                                         dt.datetime(2015, 12,  4, 17,  1, 37),
+                                         dt.datetime(2015, 12,  4, 17, 37, 19),
+                                         dt.datetime(2015, 12,  5,  9, 26, 37),
+                                         dt.datetime(2015, 12,  5, 10,  2, 51),
+                                         dt.datetime(2015, 12,  5, 10, 39, 25),
+                                         dt.datetime(2015, 12,  5, 11, 16, 50)])    
     
-    elif experiment_name == '':
-        scan_start_times = None
-        scan_end_times = None
-        pass
+    elif experiment_name == '151207_MC_IS_DS_01':
+        
+        scan_start_times = np.array([  dt.datetime(2015, 12,  7,  9, 43, 35),
+                                         dt.datetime(2015, 12,  7, 10, 21, 58),
+                                         dt.datetime(2015, 12,  7, 11,  8, 35),
+                                         dt.datetime(2015, 12,  7, 11, 46, 33),
+                                         dt.datetime(2015, 12,  7, 12, 23,  8),
+                                         dt.datetime(2015, 12,  7, 12, 59, 25),
+                                         dt.datetime(2015, 12,  7, 14, 32, 38),
+                                         dt.datetime(2015, 12,  7, 15,  9,  5),
+                                         dt.datetime(2015, 12,  8, 10, 47, 19),
+                                         dt.datetime(2015, 12,  8, 12,  0,  1),
+                                         dt.datetime(2015, 12,  8, 13, 22, 23),
+                                         dt.datetime(2015, 12,  8, 14,  1, 42),
+                                         dt.datetime(2015, 12,  8, 14, 38,  6),
+                                         dt.datetime(2015, 12,  8, 15, 14,  2),
+                                         dt.datetime(2015, 12,  8, 15, 57, 19),
+                                         dt.datetime(2015, 12,  8, 16, 33, 56),
+                                         dt.datetime(2015, 12,  8, 17, 10, 56),
+                                         dt.datetime(2015, 12,  9,  9, 36, 40),
+                                         dt.datetime(2015, 12,  9, 10, 12, 49),
+                                         dt.datetime(2015, 12,  9, 10, 50,  2),
+                                         dt.datetime(2015, 12,  9, 11, 26, 26)])
+        
+        #array of "scan end times", which are the photo start times
+        scan_end_times = np.array([      dt.datetime(2015, 12,  7,  9, 51, 57),
+                                         dt.datetime(2015, 12,  7, 10, 38, 34),
+                                         dt.datetime(2015, 12,  7, 11, 16, 34),
+                                         dt.datetime(2015, 12,  7, 11, 53,  8),
+                                         dt.datetime(2015, 12,  7, 12, 29, 25),
+                                         dt.datetime(2015, 12,  7, 14,  2, 37),
+                                         dt.datetime(2015, 12,  7, 14, 39,  4),
+                                         dt.datetime(2015, 12,  8,  9, 39, 35),
+                                         dt.datetime(2015, 12,  8, 10, 53, 28),
+                                         dt.datetime(2015, 12,  8, 12, 52, 22),
+                                         dt.datetime(2015, 12,  8, 13, 31, 42),
+                                         dt.datetime(2015, 12,  8, 14,  8,  5),
+                                         dt.datetime(2015, 12,  8, 14, 44,  2),
+                                         dt.datetime(2015, 12,  8, 15, 26,  5),
+                                         dt.datetime(2015, 12,  8, 16,  4, 36),
+                                         dt.datetime(2015, 12,  8, 16, 40, 55),
+                                         dt.datetime(2015, 12,  9,  9,  6, 39),
+                                         dt.datetime(2015, 12,  9,  9, 42, 49),
+                                         dt.datetime(2015, 12,  9, 10, 20,  2),
+                                         dt.datetime(2015, 12,  9, 10, 56, 27),
+                                         dt.datetime(2015, 12,  9, 11, 32, 37)])  
     
     elif experiment_name == '':
         scan_start_times = None
