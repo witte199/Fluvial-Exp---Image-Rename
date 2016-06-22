@@ -8,7 +8,7 @@ import shutil
 from matplotlib import pyplot as plt
 import scanDateTime
 
-expName = '151203_MC_BLF_01'
+expName = '151109_MC_IW_01'
 
 # Run this inside the directory with the images
 cwd = 'E:\\Fluvial 2015\\' + expName + '\\' + expName + '_Photos'
@@ -39,8 +39,8 @@ scan_start_times, scan_end_times = scanDateTime.get_start_end_times(expName)
 time_elapsed_during_pause = []   #create list of time differentials
 #add to list ("scan end times") - ("scan start times") in seconds
 for i in range(len(scan_start_times)):
-    time_elapsed_during_pause.append( \
-                   (scan_end_times[i] - scan_start_times[i]).total_seconds() )
+    time_elapsed_during_pause.append(\
+        (scan_end_times[i] - scan_start_times[i]).total_seconds() )
 
 #This gives us the differences between the end and the start times.
 #scan_end_times - scan_start_times
